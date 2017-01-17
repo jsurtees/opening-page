@@ -7,11 +7,10 @@
 html {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .hide {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 *, *::before, *::after {
