@@ -20,7 +20,7 @@ html {
 
 header {
   overflow: hidden;
-  width: 30em;
+  width: 28em;
   height: 40em;
   background-color: black;
   background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../images/goldleaf01.JPG");
