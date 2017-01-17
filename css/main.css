@@ -10,6 +10,10 @@ html {
   overflow: hidden;
 }
 
+.hide {
+  overflow-x: hidden;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
   -moz-text-size-adjust: 100%;
@@ -19,7 +23,6 @@ html {
 }
 
 header {
-  overflow-x: hidden;
   width: 28em;
   height: 40em;
   background-color: black;
