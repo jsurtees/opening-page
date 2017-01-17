@@ -19,7 +19,7 @@ html {
 }
 
 header {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 28em;
   height: 40em;
   background-color: black;
