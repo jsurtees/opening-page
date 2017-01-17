@@ -1,0 +1,925 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+header {
+  width: 20em;
+  height: 40em;
+  background-color: black;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../images/goldleaf01.JPG");
+  background-position: -280px -80px;
+  background-repeat: no-repeat;
+  animation: fadeimage .5s ease-in;
+}
+
+@keyframes fadeimage {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+}
+
+h1 {
+  left: 15px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  animation: fadein 2s ease-out;
+  bottom: 0;
+  color: #fff;
+}
+
+.nav {
+  padding-top: 8em;
+}
+
+@keyframes fadein {
+
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 20%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+
+}
+
+img {
+  top: 5%;
+  left: 115px;
+  width: 20%;
+  max-width: 100px;
+  position: absolute;
+  animation: fadein
+}
+
+.s-in {
+  transform: translate(-250px);
+  animation: slide .5s ease-out;
+  animation-fill-mode:forwards
+}
+
+.j-in {
+  transform: translate(-250px);
+  animation: slide .5s ease-out;
+  animation-delay: .3s;
+  animation-fill-mode:forwards
+}
+
+.dots-in {
+  transform: translate(-250px);
+  animation: slide .5s ease-out;
+  animation-delay: .7s;
+  animation-fill-mode:forwards
+}
+
+@keyframes slide {
+
+  0% {
+    transform: translate(-500px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+
+}
+
+ul {
+  list-style-type: none;
+  transform: translate(-250px);
+}
+
+li {
+  max-width: 200px;
+  margin-bottom: 40px;
+}
+
+li:first-child {
+  transform: translate(45px);
+  margin-top: 40px;
+  animation: slidetext1 .5s ease-out;
+}
+
+li:nth-child(2) {
+  transform: translate(-500px);
+  animation: slidetext2 .5s ease-out;
+  animation-delay: .3s;
+  animation-fill-mode:forwards
+}
+
+li:nth-child(3) {
+  transform: translate(-500px);
+  animation: slidetext3 .5s ease-out;
+  animation-delay: .7s;
+  animation-fill-mode:forwards;
+  padding-bottom: 100px;
+}
+
+a {
+  width: 300px;
+  border: 3px solid white;
+  padding: 10px 5px 10px 300px;
+  color: white;
+  text-decoration: none;
+  transition: all .5s linear;
+}
+
+@keyframes slidetext1 {
+
+  0% {
+    transform: translate(-500px);
+  }
+
+  100% {
+    transform: translate(42px);
+  }
+
+}
+
+@keyframes slidetext2 {
+
+  0% {
+    transform: translate(-500px);
+  }
+
+  100% {
+    transform: translate(52px);
+  }
+
+}
+
+@keyframes slidetext3 {
+
+  0% {
+    transform: translate(-500px);
+  }
+
+  100% {
+    transform: translate(27px);
+  }
+
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+
+}
+
+@media only screen and (min-width: 32em) {
+
+  header {
+    width: 60em;
+    height: 70em;
+    background-color: black;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../images/goldleaf01.JPG");
+    background-position: -280px -80px;
+    background-repeat: no-repeat;
+    animation: fadeimage .5s ease-in;
+  }
+
+  @keyframes fadeimage {
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+
+  }
+
+  h1 {
+    left: 15px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    animation: fadein 2s ease-out;
+    bottom: 0;
+    color: #fff;
+  }
+
+  .nav {
+    padding-top: 10em;
+  }
+
+  @keyframes fadein {
+
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    80% {
+      opacity: 20%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+
+  }
+
+  img {
+    top: 5%;
+    left: 80px;
+    width: 20%;
+    max-width: 100px;
+    position: absolute;
+    animation: fadein
+  }
+
+  .s-in {
+    transform: translate(-250px);
+    animation: slide .5s ease-out;
+    animation-fill-mode:forwards
+  }
+
+  .j-in {
+    transform: translate(-250px);
+    animation: slide .5s ease-out;
+    animation-delay: .3s;
+    animation-fill-mode:forwards
+  }
+
+  .dots-in {
+    transform: translate(-250px);
+    animation: slide .5s ease-out;
+    animation-delay: .7s;
+    animation-fill-mode:forwards
+  }
+
+  @keyframes slide {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(0);
+    }
+
+  }
+
+  ul {
+    list-style-type: none;
+    transform: translate(-250px);
+  }
+
+  li {
+    max-width: 200px;
+    margin-bottom: 40px;
+  }
+
+  li:first-child {
+    transform: translate(45px);
+    margin-top: 40px;
+    animation: slidetext1 .5s ease-out;
+  }
+
+  li:nth-child(2) {
+    transform: translate(-500px);
+    animation: slidetext2 .5s ease-out;
+    animation-delay: .3s;
+    animation-fill-mode:forwards
+  }
+
+  li:nth-child(3) {
+    transform: translate(-500px);
+    animation: slidetext3 .5s ease-out;
+    animation-delay: .7s;
+    animation-fill-mode:forwards;
+    padding-bottom: 100px;
+  }
+
+  a {
+    width: 300px;
+    border: 3px solid white;
+    padding: 10px 5px 10px 300px;
+    color: white;
+    text-decoration: none;
+    transition: all .5s linear;
+  }
+
+  @keyframes slidetext1 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(42px);
+    }
+
+  }
+
+  @keyframes slidetext2 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(52px);
+    }
+
+  }
+
+  @keyframes slidetext3 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(27px);
+    }
+
+  }
+
+  a:hover {
+    background-color: white;
+    color: black;
+
+  }
+
+}
+
+@media only screen and (min-width: 609px) {
+
+  header {
+    width: 60em;
+    height: 70em;
+    background-color: black;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../images/goldleaf01.JPG");
+    background-position: -100px -80px;
+    background-repeat: no-repeat;
+    animation: fadeimage .5s ease-in;
+  }
+
+  @keyframes fadeimage {
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+
+  }
+
+  h1 {
+    left: 23px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    animation: fadein 2s ease-out;
+    bottom: 0;
+    color: #fff;
+  }
+
+  .nav {
+    padding-top: 9em;
+  }
+
+  @keyframes fadein {
+
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    80% {
+      opacity: 20%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+
+  }
+
+  img {
+    top: 5%;
+    left: 155px;
+    width: 20%;
+    max-width: 100px;
+    position: absolute;
+    animation: fadein
+  }
+
+  .s-in {
+    transform: translate(-250px);
+    animation: slide .5s ease-out;
+    animation-fill-mode:forwards
+  }
+
+  .j-in {
+    transform: translate(-250px);
+    animation: slide .5s ease-out;
+    animation-delay: .3s;
+    animation-fill-mode:forwards
+  }
+
+  .dots-in {
+    transform: translate(-250px);
+    animation: slide .5s ease-out;
+    animation-delay: .7s;
+    animation-fill-mode:forwards
+  }
+
+  @keyframes slide {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(0);
+    }
+
+  }
+
+  ul {
+    list-style-type: none;
+    transform: translate(-250px);
+  }
+
+  li {
+    max-width: 200px;
+    margin-bottom: 40px;
+  }
+
+  li:first-child {
+    transform: translate(45px);
+    margin-top: 40px;
+    animation: slidetext1 .5s ease-out;
+    animation-fill-mode:forwards
+  }
+
+  li:nth-child(2) {
+    transform: translate(-500px);
+    animation: slidetext2 .5s ease-out;
+    animation-delay: .3s;
+    animation-fill-mode:forwards
+  }
+
+  li:nth-child(3) {
+    transform: translate(-500px);
+    animation: slidetext3 .5s ease-out;
+    animation-delay: .7s;
+    animation-fill-mode:forwards;
+    padding-bottom: 100px;
+  }
+
+  a {
+    width: 300px;
+    border: 3px solid white;
+    padding: 10px 5px 10px 300px;
+    color: white;
+    text-decoration: none;
+    transition: all .5s linear;
+  }
+
+  @keyframes slidetext1 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(100px);
+    }
+
+  }
+
+  @keyframes slidetext2 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(110px);
+    }
+
+  }
+
+  @keyframes slidetext3 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(75px);
+    }
+
+  }
+
+  a:hover {
+    background-color: white;
+    color: black;
+  }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+  header {
+    width: 80em;
+    height: 70em;
+    background-color: black;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../images/goldleaf01.JPG");
+    background-position: 200px -80px;
+    background-repeat: no-repeat;
+    animation: fadeimage .5s ease-in;
+  }
+
+  @keyframes fadeimage {
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+
+  }
+
+  h1 {
+    left: 23px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    animation: fadein 2s ease-out;
+    bottom: 0;
+    color: #fff;
+  }
+
+  .nav {
+    padding-top: 8em;
+  }
+
+  @keyframes fadein {
+
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    80% {
+      opacity: 20%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+
+  }
+
+  img {
+    top: 5%;
+    left: 175px;
+    width: 20%;
+    max-width: 100px;
+    position: absolute;
+    animation: fadein
+  }
+
+  .s-in {
+    transform: translate(-250px);
+    animation: slide .5s ease-out;
+    animation-fill-mode:forwards
+  }
+
+  .j-in {
+    transform: translate(-250px);
+    animation: slide .5s ease-out;
+    animation-delay: .3s;
+    animation-fill-mode:forwards
+  }
+
+  .dots-in {
+    transform: translate(-250px);
+    animation: slide .5s ease-out;
+    animation-delay: .7s;
+    animation-fill-mode:forwards
+  }
+
+  @keyframes slide {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(0);
+    }
+
+  }
+
+  ul {
+    list-style-type: none;
+    transform: translate(-250px);
+  }
+
+  li {
+    max-width: 200px;
+    margin-bottom: 40px;
+  }
+
+  li:first-child {
+    transform: translate(45px);
+    margin-top: 40px;
+    animation: slidetext1 .5s ease-out;
+    animation-fill-mode:forwards
+  }
+
+  li:nth-child(2) {
+    transform: translate(-500px);
+    animation: slidetext2 .5s ease-out;
+    animation-delay: .3s;
+    animation-fill-mode:forwards
+  }
+
+  li:nth-child(3) {
+    transform: translate(-500px);
+    animation: slidetext3 .5s ease-out;
+    animation-delay: .7s;
+    animation-fill-mode:forwards;
+    padding-bottom: 100px;
+  }
+
+  a {
+    width: 300px;
+    border: 3px solid white;
+    padding: 10px 5px 10px 300px;
+    color: white;
+    text-decoration: none;
+    transition: all .5s linear;
+  }
+
+  @keyframes slidetext1 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(112px);
+    }
+
+  }
+
+  @keyframes slidetext2 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(123px);
+    }
+
+  }
+
+  @keyframes slidetext3 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(86px);
+    }
+
+  }
+
+  a:hover {
+    background-color: white;
+    color: black;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+
+  header {
+    width: 80em;
+    height: 70em;
+    background-color: black;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../images/goldleaf01.JPG");
+    background-position: 500px -80px;
+    background-repeat: no-repeat;
+    animation: fadeimage .5s ease-in;
+  }
+
+  @keyframes fadeimage {
+
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+
+  }
+
+  h1 {
+    left: 23px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    animation: fadein 2s ease-out;
+    bottom: 0;
+    color: #fff;
+  }
+
+  .nav {
+    padding-top: 8em;
+  }
+
+  @keyframes fadein {
+
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    80% {
+      opacity: 20%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+
+  }
+
+  img {
+    top: 5%;
+    left: 195px;
+    width: 20%;
+    max-width: 100px;
+    position: absolute;
+    animation: fadein
+  }
+
+  .s-in {
+    transform: translate(-300px);
+    animation: slide .5s ease-out;
+    animation-fill-mode:forwards
+  }
+
+  .j-in {
+    transform: translate(-300px);
+    animation: slide .5s ease-out;
+    animation-delay: .3s;
+    animation-fill-mode:forwards
+  }
+
+  .dots-in {
+    transform: translate(-300px);
+    animation: slide .5s ease-out;
+    animation-delay: .7s;
+    animation-fill-mode:forwards
+  }
+
+  @keyframes slide {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(0);
+    }
+
+  }
+
+  ul {
+    list-style-type: none;
+    transform: translate(-250px);
+  }
+
+  li {
+    max-width: 200px;
+    margin-bottom: 40px;
+  }
+
+  li:first-child {
+    transform: translate(45px);
+    margin-top: 40px;
+    animation: slidetext1 .5s ease-out;
+    animation-fill-mode:forwards
+  }
+
+  li:nth-child(2) {
+    transform: translate(-500px);
+    animation: slidetext2 .5s ease-out;
+    animation-delay: .3s;
+    animation-fill-mode:forwards
+  }
+
+  li:nth-child(3) {
+    transform: translate(-500px);
+    animation: slidetext3 .5s ease-out;
+    animation-delay: .7s;
+    animation-fill-mode:forwards;
+    padding-bottom: 100px;
+  }
+
+  a {
+    width: 300px;
+    border: 3px solid white;
+    padding: 10px 5px 10px 300px;
+    color: white;
+    text-decoration: none;
+    transition: all .5s linear;
+  }
+
+  @keyframes slidetext1 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(125px);
+    }
+
+  }
+
+  @keyframes slidetext2 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(137px);
+    }
+
+  }
+
+  @keyframes slidetext3 {
+
+    0% {
+      transform: translate(-500px);
+    }
+
+    100% {
+      transform: translate(96px);
+    }
+
+  }
+
+  a:hover {
+    background-color: white;
+    color: black;
+  }
+
+}
